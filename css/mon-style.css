@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+main p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+header {
+    background-color: #071540;
+    font-size: 1.1rem;
+}
+
+header div {
+    /* border: 1px solid black; */
+    height: 25vh;
+    background-image: url("../img/banner-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center;
+}
+
+
+header nav li {
+    list-style: none;
+    margin: 12px;
+    display: inline-block;
+}
+
+header nav li a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header nav li a:hover {
+    font-size: 1.5rem;
+    transition: .3s;
+    color: #84D9B1;
+}
+
+main {
+    max-width: 1024px;
+    background-color: rgb(235, 235, 235);
+    margin: 0 auto;
+    padding: 24px 18px;
+}
+
+main h1 {
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    color: #071540;
+    font-size: 2.6em;
+    margin-bottom: 24px;
+    border-bottom: 1px dashed #214567;
+    padding-bottom: 24px;
+}
+
+main h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-bottom: 18px;
+    color: white;
+    background-color: #214567;
+    padding: 7px;
+}
+
+main h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+}
+
+main article {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #F2F2F2;
+}
+
+main figure {
+    margin-bottom: 12px;
+}
+
+main figure img {
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main figcaption {
+    background-color: #2CBF6C;
+    color: rgb(242, 242, 242);
+    padding: 7px;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+}
+
+
+footer{
+    color: white;
+    background-color: #84D9B1;
+    padding: 24px 18px;
+    text-align: center;
+    }
+
+footer h2{
+    font-size: 1.4em;
+    color: white;
+}
+
+footer p:nth-child(2), footer p:nth-child(4){
+    font-size: .8em;
+}
+
+footer p:nth-child(3){
+    font-size: 1.4em;
+    color: white;
+}
+
+
+/* class et id  */
+
+.majuscule{
+    text-transform: uppercase;
+}
+    
+
+/* Mise en place de la gallerie */
+
+@media screen and (min-width : 780px){
+
+#gallery figure{
+    width: 47.5%;
+}
+
+.flexing{
+    display: flex;
+}
+
+#gallery{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+}
+
